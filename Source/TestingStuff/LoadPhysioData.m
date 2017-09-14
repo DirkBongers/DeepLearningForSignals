@@ -8,6 +8,6 @@ for i = sampleRange
         filename = [num2str(i),'m.mat'];
         websave(filename,url);
     catch
-        disp('failed')
+        disp('didnt work')
     end
 end
