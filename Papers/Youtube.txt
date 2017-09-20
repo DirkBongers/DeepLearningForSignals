@@ -1,0 +1,11 @@
+Youtube Videos on ECG and Heart Diseases:
+
+ECG
+https://www.youtube.com/watch?v=kwLbSx9BNbU
+https://www.youtube.com/watch?v=AUn8P5hRG0c
+
+Cardiac Arrythmias
+https://www.youtube.com/watch?annotation_id=annotation_1691971025&feature=iv&src_vid=kwLbSx9BNbU&v=6LrptveKYus
+
+for leads take 6s windows
+1 large square = 5 small squares = 200ms
