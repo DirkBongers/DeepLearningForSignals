@@ -1,0 +1,26 @@
+Dora:
+Papers about Auto Encoders
+not clear about sparse AE
+
+Kon:
+Technical papers
+Keras and Theano
+
+Dirk and Pik:
+Explanation on ECG
+
+
+Goal:
+Dirk Data Downloader
+
+project skills paper:
+Autoencoder and CNN (Kon)
+technical stuff ECG (Pit)
+General, applications (Dora)
+Putting together (Dirk)
+
+Ideas:
+Windowing (6 seconds)
+multiple cnn's from multiple
+
+
