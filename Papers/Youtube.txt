@@ -9,3 +9,4 @@ https://www.youtube.com/watch?annotation_id=annotation_1691971025&feature=iv&src
 
 for leads take 6s windows
 1 large square = 5 small squares = 200ms
+Lead 2 generally more used
