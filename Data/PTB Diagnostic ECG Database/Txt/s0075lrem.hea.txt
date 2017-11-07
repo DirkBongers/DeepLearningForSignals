@@ -1,0 +1,66 @@
+s0075lrem 15 1000 60000
+s0075lrem.mat 16+24 2000/mV 16 0 -525 -1641 0 i
+s0075lrem.mat 16+24 2000/mV 16 0 100 18490 0 ii
+s0075lrem.mat 16+24 2000/mV 16 0 624 94 0 iii
+s0075lrem.mat 16+24 2000/mV 16 0 212 -6368 0 avr
+s0075lrem.mat 16+24 2000/mV 16 0 -574 4664 0 avl
+s0075lrem.mat 16+24 2000/mV 16 0 362 -20964 0 avf
+s0075lrem.mat 16+24 2000/mV 16 0 407 -31757 0 v1
+s0075lrem.mat 16+24 2000/mV 16 0 723 23476 0 v2
+s0075lrem.mat 16+24 2000/mV 16 0 804 19398 0 v3
+s0075lrem.mat 16+24 2000/mV 16 0 852 23096 0 v4
+s0075lrem.mat 16+24 2000/mV 16 0 635 -30248 0 v5
+s0075lrem.mat 16+24 2000/mV 16 0 1004 -15233 0 v6
+s0075lrem.mat 16+24 2000/mV 16 0 691 -5193 0 vx
+s0075lrem.mat 16+24 2000/mV 16 0 293 8863 0 vy
+s0075lrem.mat 16+24 2000/mV 16 0 488 11870 0 vz
+# age: 60
+# sex: male
+# ECG date: 10/12/1990
+# Diagnose:
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): infero-lateral
+# Former infarction (localization): inferior
+# Additional diagnoses: Arterial hypertension
+# Smoker: no
+# Number of coronary vessels involved: 2
+# Infarction date (acute): 18-Nov-90
+# Previous infarction (1) date: 01-Jan-86
+# Previous infarction (2) date: n/a
+# Hemodynamics:
+# Catheterization date: 26-Nov-90
+# Ventriculography: Hypokinesia/Akinesia postero-basal and posero-lateral wall
+# Chest X-ray: normal
+# Peripheral blood Pressure (syst/diast):  150/90 mmHg
+# Pulmonary artery pressure (at rest) (syst/diast):   17/8 cmH2O
+# Pulmonary artery pressure (at rest) (mean): 12 cmH2O
+# Pulmonary capillary wedge pressure (at rest): 3 cmH2O
+# Cardiac output (at rest): 4,2 l/min
+# Cardiac index (at rest): 2,46 l/min/sqrmBSA
+# Stroke volume index (at rest):  24.1 ml/beat
+# Pulmonary artery pressure (laod) (syst/diast):   20/10 cmH2O
+# Pulmonary artery pressure (laod) (mean): 15 cmH2O
+# Pulmonary capillary wedge pressure (load): 3 cmH2O
+# Cardiac output (load): 7,57 l/min
+# Cardiac index (load): 4,43 l/min/sqrmBSA
+# Stroke volume index (load): 36,9 ml/beat
+# Aorta (at rest) (syst/diast): n/a
+# Aorta (at rest) mean: n/a
+# Left ventricular enddiastolic pressure: n/a
+# Left coronary artery stenoses (RIVA): RIVA distal to ramus diagonalis_2 70%. 
+# Left coronary artery stenoses (RCX): RCX at origin 50%
+# Right coronary artery stenoses (RCA): No stenoses
+# Echocardiography: n/a
+# Therapy:
+# Infarction date: 18-Nov-90
+# Catheterization date: 26-Nov-90
+# Admission date: 18-Nov-90
+# Medication pre admission: Metoprolol
+# Start lysis therapy (hh.mm): 20:27
+# Lytic agent: Streptokinase
+# Dosage (lytic agent): 1.5 Mio IE
+# Additional medication: Nitrate Triflupromazin ASA Diazepam Oxazepam
+# In hospital medication: Metprolol Isosorbit-Mononitrate Ca-antagonist
+# Medication after discharge: Metprolol Isosorbit-Mononitrate ASA
+#Creator: wfdb2mat
+#Source: record ptbdb/patient017/s0075lre

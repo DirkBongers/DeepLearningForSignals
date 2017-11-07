@@ -1,0 +1,66 @@
+s0449_rem 15 1000 60000
+s0449_rem.mat 16+24 2000/mV 16 0 -181 -21924 0 i
+s0449_rem.mat 16+24 2000/mV 16 0 -506 -31222 0 ii
+s0449_rem.mat 16+24 2000/mV 16 0 -323 1668 0 iii
+s0449_rem.mat 16+24 2000/mV 16 0 343 24938 0 avr
+s0449_rem.mat 16+24 2000/mV 16 0 72 -21010 0 avl
+s0449_rem.mat 16+24 2000/mV 16 0 -415 17898 0 avf
+s0449_rem.mat 16+24 2000/mV 16 0 -75 26438 0 v1
+s0449_rem.mat 16+24 2000/mV 16 0 -64 3914 0 v2
+s0449_rem.mat 16+24 2000/mV 16 0 -293 -18018 0 v3
+s0449_rem.mat 16+24 2000/mV 16 0 305 20290 0 v4
+s0449_rem.mat 16+24 2000/mV 16 0 297 -6469 0 v5
+s0449_rem.mat 16+24 2000/mV 16 0 -280 -13051 0 v6
+s0449_rem.mat 16+24 2000/mV 16 0 127 -4701 0 vx
+s0449_rem.mat 16+24 2000/mV 16 0 563 22045 0 vy
+s0449_rem.mat 16+24 2000/mV 16 0 126 -17568 0 vz
+# age: 62
+# sex: male
+# ECG date: 06/06/1996
+# Diagnose:
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): infero-lateral
+# Former infarction (localization): no
+# Additional diagnoses: Prosthetic aortic valve, Arterial hypertension, Mitral regurgitation (grade 2)
+# Smoker: no
+# Number of coronary vessels involved: unknown
+# Infarction date (acute): 27-May-96
+# Previous infarction (1) date: n/a
+# Previous infarction (2) date: n/a
+# Hemodynamics:
+# Catheterization date: n/a
+# Ventriculography: n/a
+# Chest X-ray: n/a
+# Peripheral blood Pressure (syst/diast): n/a
+# Pulmonary artery pressure (at rest) (syst/diast): n/a
+# Pulmonary artery pressure (at rest) (mean): n/a
+# Pulmonary capillary wedge pressure (at rest): n/a
+# Cardiac output (at rest): n/a
+# Cardiac index (at rest): n/a
+# Stroke volume index (at rest): n/a
+# Pulmonary artery pressure (laod) (syst/diast): n/a
+# Pulmonary artery pressure (laod) (mean): n/a
+# Pulmonary capillary wedge pressure (load): n/a
+# Cardiac output (load): n/a
+# Cardiac index (load): n/a
+# Stroke volume index (load): n/a
+# Aorta (at rest) (syst/diast): n/a
+# Aorta (at rest) mean: n/a
+# Left ventricular enddiastolic pressure: n/a
+# Left coronary artery stenoses (RIVA): n/a
+# Left coronary artery stenoses (RCX): n/a
+# Right coronary artery stenoses (RCA): n/a
+# Echocardiography: LV hypertrophy, good global contractility, Akinesia infero-basal, Hypokinesia posterior, Enlarged aortic root, Mitral regurgitation (grade 2)
+# Therapy:
+# Infarction date: 27-May-96
+# Catheterization date: n/a
+# Admission date: n/a
+# Medication pre admission: n/a
+# Start lysis therapy (hh.mm): n/a
+# Lytic agent: n/a
+# Dosage (lytic agent): n/a
+# Additional medication: n/a
+# In hospital medication: n/a
+# Medication after discharge: n/a
+#Creator: wfdb2mat
+#Source: record ptbdb/patient226/s0449_re

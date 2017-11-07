@@ -1,0 +1,66 @@
+s0016lrem 15 1000 60000
+s0016lrem.mat 16+24 2000/mV 16 0 508 19927 0 i
+s0016lrem.mat 16+24 2000/mV 16 0 1507 955 0 ii
+s0016lrem.mat 16+24 2000/mV 16 0 998 -16584 0 iii
+s0016lrem.mat 16+24 2000/mV 16 0 -1007 10244 0 avr
+s0016lrem.mat 16+24 2000/mV 16 0 -245 15706 0 avl
+s0016lrem.mat 16+24 2000/mV 16 0 1252 -5972 0 avf
+s0016lrem.mat 16+24 2000/mV 16 0 1163 3076 0 v1
+s0016lrem.mat 16+24 2000/mV 16 0 1575 22822 0 v2
+s0016lrem.mat 16+24 2000/mV 16 0 1872 -27186 0 v3
+s0016lrem.mat 16+24 2000/mV 16 0 1968 -7229 0 v4
+s0016lrem.mat 16+24 2000/mV 16 0 1636 -31333 0 v5
+s0016lrem.mat 16+24 2000/mV 16 0 1077 -11219 0 v6
+s0016lrem.mat 16+24 2000/mV 16 0 770 -20848 0 vx
+s0016lrem.mat 16+24 2000/mV 16 0 -262 9318 0 vy
+s0016lrem.mat 16+24 2000/mV 16 0 58 -3878 0 vz
+# age: 81
+# sex: female
+# ECG date: 18/10/1990
+# Diagnose:
+# Reason for admission: Myocardial infarction
+# Acute infarction (localization): infero-latera
+# Former infarction (localization): no
+# Additional diagnoses: Diabetes mellitus
+# Smoker: no
+# Number of coronary vessels involved: 1
+# Infarction date (acute): 29-Sep-90
+# Previous infarction (1) date: n/a
+# Previous infarction (2) date: n/a
+# Hemodynamics:
+# Catheterization date: 16-Oct-90
+# Ventriculography: Akinesia inferior wall
+# Chest X-ray: Heart size upper limit of norm
+# Peripheral blood Pressure (syst/diast):  140/80 mmHg
+# Pulmonary artery pressure (at rest) (syst/diast): n/a
+# Pulmonary artery pressure (at rest) (mean): n/a
+# Pulmonary capillary wedge pressure (at rest): n/a
+# Cardiac output (at rest): n/a
+# Cardiac index (at rest): n/a
+# Stroke volume index (at rest): n/a
+# Pulmonary artery pressure (laod) (syst/diast): n/a
+# Pulmonary artery pressure (laod) (mean): n/a
+# Pulmonary capillary wedge pressure (load): n/a
+# Cardiac output (load): n/a
+# Cardiac index (load): n/a
+# Stroke volume index (load): n/a
+# Aorta (at rest) (syst/diast): 160/64 cmH2O
+# Aorta (at rest) mean: 106 cmH2O
+# Left ventricular enddiastolic pressure: 11 cmH2O
+# Left coronary artery stenoses (RIVA): RIVA 70% proximal to ramus diagonalis_2
+# Left coronary artery stenoses (RCX): No stenoses
+# Right coronary artery stenoses (RCA): No stenoses
+# Echocardiography: n/a
+# Therapy:
+# Infarction date: 29-Sep-90
+# Catheterization date: 16-Oct-90
+# Admission date: 29-Sep-90
+# Medication pre admission: Isosorbit-Dinitrate Digoxin Glibenclamide
+# Start lysis therapy (hh.mm): 19:45
+# Lytic agent: Gamma-TPA
+# Dosage (lytic agent): 30 mg
+# Additional medication: Heparin Isosorbit-Mononitrate ASA Diazepam
+# In hospital medication: ASA Isosorbit-Mononitrate Ca-antagonist Amiloride+Chlorothiazide Glibenclamide Insulin
+# Medication after discharge: ASA Isosorbit-Mononitrate Amiloride+Chlorothiazide Glibenclamide
+#Creator: wfdb2mat
+#Source: record ptbdb/patient001/s0016lre

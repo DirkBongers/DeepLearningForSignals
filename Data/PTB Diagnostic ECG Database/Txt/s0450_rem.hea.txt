@@ -1,0 +1,66 @@
+s0450_rem 15 1000 60000
+s0450_rem.mat 16+24 2000/mV 16 0 -113 24661 0 i
+s0450_rem.mat 16+24 2000/mV 16 0 1081 7008 0 ii
+s0450_rem.mat 16+24 2000/mV 16 0 1194 28084 0 iii
+s0450_rem.mat 16+24 2000/mV 16 0 -485 17682 0 avr
+s0450_rem.mat 16+24 2000/mV 16 0 -652 29458 0 avl
+s0450_rem.mat 16+24 2000/mV 16 0 1138 -15322 0 avf
+s0450_rem.mat 16+24 2000/mV 16 0 -146 -23527 0 v1
+s0450_rem.mat 16+24 2000/mV 16 0 -468 -10399 0 v2
+s0450_rem.mat 16+24 2000/mV 16 0 -21 14956 0 v3
+s0450_rem.mat 16+24 2000/mV 16 0 -229 29000 0 v4
+s0450_rem.mat 16+24 2000/mV 16 0 -812 -14358 0 v5
+s0450_rem.mat 16+24 2000/mV 16 0 -734 -28815 0 v6
+s0450_rem.mat 16+24 2000/mV 16 0 -123 22204 0 vx
+s0450_rem.mat 16+24 2000/mV 16 0 144 12062 0 vy
+s0450_rem.mat 16+24 2000/mV 16 0 -561 -16826 0 vz
+# age: 52
+# sex: male
+# ECG date: 07/06/1996
+# Diagnose:
+# Reason for admission: Hypertrophy
+# Acute infarction (localization): no
+# Former infarction (localization): no
+# Additional diagnoses: Coronary artery disease, Arterial hypertension
+# Smoker: no
+# Number of coronary vessels involved: 3
+# Infarction date (acute): n/a
+# Previous infarction (1) date: n/a
+# Previous infarction (2) date: n/a
+# Hemodynamics:
+# Catheterization date: n/a
+# Ventriculography: n/a
+# Chest X-ray: n/a
+# Peripheral blood Pressure (syst/diast): n/a
+# Pulmonary artery pressure (at rest) (syst/diast): n/a
+# Pulmonary artery pressure (at rest) (mean): n/a
+# Pulmonary capillary wedge pressure (at rest): n/a
+# Cardiac output (at rest): n/a
+# Cardiac index (at rest): n/a
+# Stroke volume index (at rest): n/a
+# Pulmonary artery pressure (laod) (syst/diast): n/a
+# Pulmonary artery pressure (laod) (mean): n/a
+# Pulmonary capillary wedge pressure (load): n/a
+# Cardiac output (load): n/a
+# Cardiac index (load): n/a
+# Stroke volume index (load): n/a
+# Aorta (at rest) (syst/diast): n/a
+# Aorta (at rest) mean: n/a
+# Left ventricular enddiastolic pressure: n/a
+# Left coronary artery stenoses (RIVA): n/a
+# Left coronary artery stenoses (RCX): n/a
+# Right coronary artery stenoses (RCA): n/a
+# Echocardiography: no Echo
+# Therapy:
+# Infarction date: n/a
+# Catheterization date: n/a
+# Admission date: n/a
+# Medication pre admission: n/a
+# Start lysis therapy (hh.mm): n/a
+# Lytic agent: n/a
+# Dosage (lytic agent): n/a
+# Additional medication: n/a
+# In hospital medication: n/a
+# Medication after discharge: n/a
+#Creator: wfdb2mat
+#Source: record ptbdb/patient227/s0450_re
