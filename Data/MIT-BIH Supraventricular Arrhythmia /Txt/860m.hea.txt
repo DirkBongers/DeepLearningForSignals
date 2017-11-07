@@ -1,0 +1,5 @@
+860m 2 128 7680
+860m.mat 16+24 200/mV 10 0 54 -25228 0 ECG1
+860m.mat 16+24 200/mV 10 0 -86 -18910 0 ECG2
+#Creator: wfdb2mat
+#Source: record svdb/860

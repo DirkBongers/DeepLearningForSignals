@@ -1,0 +1,5 @@
+851m 2 128 7680
+851m.mat 16+24 200/mV 10 0 790 32553 0 ECG1
+851m.mat 16+24 200/mV 10 0 30 1512 0 ECG2
+#Creator: wfdb2mat
+#Source: record svdb/851
