@@ -1,0 +1,6 @@
+14172m 2 128 7680
+14172m.mat 16+24 200/mV 12 0 4 -26128 0 ECG1
+14172m.mat 16+24 200/mV 12 0 46 -22242 0 ECG2
+#Age: 75  Sex: M
+#Creator: wfdb2mat
+#Source: record ltdb/14172
