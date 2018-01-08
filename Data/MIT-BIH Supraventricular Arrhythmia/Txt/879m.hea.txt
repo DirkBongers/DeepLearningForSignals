@@ -1,0 +1,5 @@
+879m 2 128 7680
+879m.mat 16+24 200/mV 10 0 66 22600 0 ECG1
+879m.mat 16+24 200/mV 10 0 54 1511 0 ECG2
+#Creator: wfdb2mat
+#Source: record svdb/879

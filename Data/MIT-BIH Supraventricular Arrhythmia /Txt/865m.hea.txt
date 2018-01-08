@@ -1,5 +1,0 @@
-865m 2 128 7680
-865m.mat 16+24 200/mV 10 0 -50 12526 0 ECG1
-865m.mat 16+24 200/mV 10 0 -14 -4008 0 ECG2
-#Creator: wfdb2mat
-#Source: record svdb/865
