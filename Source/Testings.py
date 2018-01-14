@@ -25,6 +25,8 @@ from sklearn.model_selection import train_test_split
 from keras.models import Sequential
 from keras.layers import Dense,Activation
 
+CONV_LAYLENGTH = 5
+
 def loadMLII_arrythmiaData():
     data = []
     data.append(sio.loadmat('C:\\Users\\Dirk\\Desktop\\DeepLearningForSignals\\Data\\MIT_BIH Arrhythmia Database\\Matlab\\100m.mat').get('val')[0])
@@ -91,20 +93,20 @@ def ConvolutionalAutoEncoder(chunkSize):
         #Building the model. 6 layer 1D convolutional autoencoder.  Filter sizes and numbers are random guesses
     
     input_seq = Input(shape=(chunkSize,1, ))  # 3 sec of 300Hz measurements
-    hidden1 = Conv1D(32, 5, activation='relu', padding='same')(input_seq)
+    hidden1 = Conv1D(32, CONV_LAYLENGTH, activation='relu', padding='same')(input_seq)
     pool1 = MaxPooling1D(5, padding='same')(hidden1)
-    hidden2 = Conv1D(32, 5, activation='relu', padding='same')(pool1)
+    hidden2 = Conv1D(32, CONV_LAYLENGTH, activation='relu', padding='same')(pool1)
     pool2 = MaxPooling1D(5, padding='same')(hidden2)
-    hidden3 = Conv1D(32, 5, activation='relu', padding='same')(pool2)
+    hidden3 = Conv1D(32, CONV_LAYLENGTH, activation='relu', padding='same')(pool2)
     encoded = MaxPooling1D(3, padding='same')(hidden3)
     
-    hidden4 = Conv1D(32, 5, activation='relu', padding='same')(encoded)
+    hidden4 = Conv1D(32, CONV_LAYLENGTH, activation='relu', padding='same')(encoded)
     pool4 = UpSampling1D(3)(hidden4)
-    hidden5 = Conv1D(32, 5, activation='relu', padding='same')(pool4)
+    hidden5 = Conv1D(32, CONV_LAYLENGTH, activation='relu', padding='same')(pool4)
     pool5 = UpSampling1D(5)(hidden5)
-    hidden6 = Conv1D(32, 5, activation='relu', padding='same')(pool5)
+    hidden6 = Conv1D(32, CONV_LAYLENGTH, activation='relu', padding='same')(pool5)
     pool6 = UpSampling1D(5)(hidden6)
-    decoded = Conv1D(1, 5, activation='tanh', padding='same')(pool6)
+    decoded = Conv1D(1, CONV_LAYLENGTH, activation='tanh', padding='same')(pool6)
     
     autoencoder = Model(input_seq, decoded)
     autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
@@ -144,90 +146,109 @@ for i in range(0,plotrange):
    plt.plot(Xtest[i])
    plt.plot(results[i])
    plt.show()
- 
-from keras import backend as K
+# 
+#from keras import backend as K
+#
+#inp = AE.input                                           # input placeholder
+#outputs = [layer.output for layer in AE.layers]          # all layer outputs
+#functors = [K.function([inp]+ [K.learning_phase()], [out]) for out in outputs]  # evaluation functions
+#
+## Testing
+#test = Xtest.reshape(Xtest.shape[0],Xtest.shape[1],1)
+#layer_outs = [func([test, 1.]) for func in functors]
+#plt.plot(layer_outs[3][0][0])
+##[number layer][always 0][testsample number][node number in layer]
+#from scipy.interpolate import interp1d
+#
+##change first[] to change the layer to disp
+##layer = 7
+##for node in range(0,np.shape(layer_outs[layer][0][0])[1]):
+##    x = np.linspace(0,np.shape(layer_outs[layer][0][0][node])[0]-1,num=np.shape(layer_outs[layer][0][0][node])[0],endpoint=True)
+##    y = layer_outs[layer][0][0][node]
+##    f = interp1d(x,y,kind = 'cubic')
+##    xnew = np.linspace(0,np.shape(layer_outs[layer][0][0][node])[0]-1,num = np.shape(layer_outs[0][0][0])[0],endpoint=True)
+##    plt.figure();plt.plot(Xtest[0]);plt.plot(f(xnew));plt.show
+#
+#
+#
+#def get_activations(model, model_inputs, print_shape_only=False, layer_name=None):
+#    print('----- activations -----')
+#    activations = []
+#    inp = model.input
+#
+#    model_multi_inputs_cond = True
+#    if not isinstance(inp, list):
+#        # only one input! let's wrap it in a list.
+#        inp = [inp]
+#        model_multi_inputs_cond = False
+#
+#    outputs = [layer.output for layer in model.layers if
+#               layer.name == layer_name or layer_name is None]  # all layer outputs
+#
+#    funcs = [K.function(inp + [K.learning_phase()], [out]) for out in outputs]  # evaluation functions
+#
+#    if model_multi_inputs_cond:
+#        list_inputs = []
+#        list_inputs.extend(model_inputs)
+#        list_inputs.append(0.)
+#    else:
+#        list_inputs = [model_inputs, 0.]
+#
+#    # Learning phase. 0 = Test mode (no dropout or batch normalization)
+#    # layer_outputs = [func([model_inputs, 0.])[0] for func in funcs]
+#    layer_outputs = [funcs(list_inputs)[0] ]
+#    for layer_activations in layer_outputs:
+#        activations.append(layer_activations)
+#        if print_shape_only:
+#            print(layer_activations.shape)
+#        else:
+#            print(layer_activations)
+#    return activations
+#
+#
+#def display_activations(activation_maps,disp1Example=True):
+#    for layer in range(0,14):
+#        if disp1Example:
+#            for ex in range(0,1):
+#                print('filters of layer '+str(layer)+' example '+str(ex))
+#                plt.figure()
+#                plt.plot(a[layer][ex])
+#                plt.show()
+#        else:
+#            for ex in range(0,np.shape(activation_maps[layer])[0]):
+#                print('filters of layer '+str(layer)+' example '+str(ex))
+#                plt.figure()
+#                plt.plot(a[layer][ex])
+#                plt.show()
+#        print('displaying filters')
+#    import seaborn as sb
+#    sb.set()
+#    for i in range(0,14):
+#        plt.figure()
+#        sb.heatmap(np.transpose(a[i][0]))
+#        plt.show()
+#        
+#test = Xtest.reshape(Xtest.shape[0],Xtest.shape[1],1)
+#a = get_activations(AE,test, print_shape_only=True)  # with just one sample.
+#display_activations(a)
+#
+#
+def convFilterVisualiation(model,layer,path):
+    x = model.layers[layer].get_weights()
+    xt = np.transpose(x[0])
+    fig = plt.figure(figsize=(50,30))
+    fig.suptitle('LAYER 9')
+    for i in range(0,np.shape(xt)[0]):
+        ax = plt.subplot(4,8,i+1)
+        ax.set_title('Filter '+str(i))
+        ax.plot(xt[i][0])
+    plt.savefig(path)
+    fig.show()
 
-inp = AE.input                                           # input placeholder
-outputs = [layer.output for layer in AE.layers]          # all layer outputs
-functors = [K.function([inp]+ [K.learning_phase()], [out]) for out in outputs]  # evaluation functions
-
-# Testing
-test = Xtest.reshape(Xtest.shape[0],Xtest.shape[1],1)
-layer_outs = [func([test, 1.]) for func in functors]
-plt.plot(layer_outs[3][0][0])
-#[number layer][always 0][testsample number][node number in layer]
-from scipy.interpolate import interp1d
-
-#change first[] to change the layer to disp
-#layer = 7
-#for node in range(0,np.shape(layer_outs[layer][0][0])[1]):
-#    x = np.linspace(0,np.shape(layer_outs[layer][0][0][node])[0]-1,num=np.shape(layer_outs[layer][0][0][node])[0],endpoint=True)
-#    y = layer_outs[layer][0][0][node]
-#    f = interp1d(x,y,kind = 'cubic')
-#    xnew = np.linspace(0,np.shape(layer_outs[layer][0][0][node])[0]-1,num = np.shape(layer_outs[0][0][0])[0],endpoint=True)
-#    plt.figure();plt.plot(Xtest[0]);plt.plot(f(xnew));plt.show
-
-
-
-def get_activations(model, model_inputs, print_shape_only=False, layer_name=None):
-    print('----- activations -----')
-    activations = []
-    inp = model.input
-
-    model_multi_inputs_cond = True
-    if not isinstance(inp, list):
-        # only one input! let's wrap it in a list.
-        inp = [inp]
-        model_multi_inputs_cond = False
-
-    outputs = [layer.output for layer in model.layers if
-               layer.name == layer_name or layer_name is None]  # all layer outputs
-
-    funcs = [K.function(inp + [K.learning_phase()], [out]) for out in outputs]  # evaluation functions
-
-    if model_multi_inputs_cond:
-        list_inputs = []
-        list_inputs.extend(model_inputs)
-        list_inputs.append(0.)
-    else:
-        list_inputs = [model_inputs, 0.]
-
-    # Learning phase. 0 = Test mode (no dropout or batch normalization)
-    # layer_outputs = [func([model_inputs, 0.])[0] for func in funcs]
-    layer_outputs = [funcs(list_inputs)[0] ]
-    for layer_activations in layer_outputs:
-        activations.append(layer_activations)
-        if print_shape_only:
-            print(layer_activations.shape)
-        else:
-            print(layer_activations)
-    return activations
-
-
-def display_activations(activation_maps,disp1Example=True):
-    for layer in range(0,14):
-        if disp1Example:
-            for ex in range(0,1):
-                print('filters of layer '+str(layer)+' example '+str(ex))
-                plt.figure()
-                plt.plot(a[layer][ex])
-                plt.show()
-        else:
-            for ex in range(0,np.shape(activation_maps[layer])[0]):
-                print('filters of layer '+str(layer)+' example '+str(ex))
-                plt.figure()
-                plt.plot(a[layer][ex])
-                plt.show()
-        print('displaying filters')
-    import seaborn as sb
-    sb.set()
-    for i in range(0,14):
-        plt.figure()
-        sb.heatmap(np.transpose(a[i][0]))
-        plt.show()
-        
-test = Xtest.reshape(Xtest.shape[0],Xtest.shape[1],1)
-a = get_activations(AE,test, print_shape_only=True)  # with just one sample.
-display_activations(a)
-
-
+convFilterVisualiation(AE,1,'C:\\Users\\Dirk\\Desktop\\DeepLearningForSignals\\images\\CFL'+str(CONV_LAYLENGTH)+'_Layer1.png')
+convFilterVisualiation(AE,3,'C:\\Users\\Dirk\\Desktop\\DeepLearningForSignals\\images\\CFL'+str(CONV_LAYLENGTH)+'_Layer3.png')
+convFilterVisualiation(AE,5,'C:\\Users\\Dirk\\Desktop\\DeepLearningForSignals\\images\\CFL'+str(CONV_LAYLENGTH)+'_Layer5.png')
+convFilterVisualiation(AE,7,'C:\\Users\\Dirk\\Desktop\\DeepLearningForSignals\\images\\CFL'+str(CONV_LAYLENGTH)+'_Layer7.png')
+convFilterVisualiation(AE,9,'C:\\Users\\Dirk\\Desktop\\DeepLearningForSignals\\images\\CFL'+str(CONV_LAYLENGTH)+'_Layer9.png')
+convFilterVisualiation(AE,11,'C:\\Users\\Dirk\\Desktop\\DeepLearningForSignals\\images\\CFL'+str(CONV_LAYLENGTH)+'_Layer11.png')
+convFilterVisualiation(AE,13,'C:\\Users\\Dirk\\Desktop\\DeepLearningForSignals\\images\\CFL'+str(CONV_LAYLENGTH)+'_Layer13.png')    
